@@ -47,6 +47,7 @@ namespace Pratica_2webApi.Controllers
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] Estudiante actualizado)
         {
+
             var estudiante = estudiantes.FirstOrDefault(e => e.Id == id);
 
             if (estudiante == null)
